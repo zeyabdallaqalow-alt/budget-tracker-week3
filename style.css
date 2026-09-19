@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f7f6;
+    color: #263238;
+    margin: 30px;
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #1b5e5a;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #d7e2e0;
+    border-radius: 12px;
+}
+
+/* Add Expense card */
+.add-expense-section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #d7e2e0;
+    border-radius: 12px;
+}
+
+/* Direct child selector */
+.add-expense-section > form {
+    padding: 10px;
+}
+
+/* Form styling */
+label {
+    font-weight: 600;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #b8c8c5;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #1b5e5a;
+}
+
+/* Button styling */
+button {
+    background-color: #1b5e5a;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #144743;
+}
+
+/* Expense Table card */
+.expenses-section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #d7e2e0;
+    border-radius: 12px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #1b5e5a;
+    color: white;
+    padding: 12px;
+    border: 1px solid #164d49;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #d7e2e0;
+}
+
+/* Alternating rows */
+tr:nth-child(even) {
+    background-color: #eef5f3;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #dcece8;
+}
+
+/* Descendant selector */
+.expenses-section td {
+    padding: 12px;
+}
+
+/* Negation selector */
+input:not([type="submit"]) {
+    margin-bottom: 15px;
+}
+
+/* Details section */
+details {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #d7e2e0;
+    border-radius: 8px;
+}
+
+/* Video */
+iframe {
+    margin-top: 20px;
+    max-width: 100%;
+}
